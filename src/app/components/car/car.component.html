@@ -1,10 +1,55 @@
+<div
+  *ngIf="dataLoaded == false"
+  class="spinner-border text-success"
+  role="status"
+>
+  <span class="visually-hidden">Loading...</span>
+</div>
 <table class="table">
-    <tr *ngFor="let car of cars">
-        <td>{{car.carId}}</td>
-        <td>{{car.brandId}}</td>
-        <td>{{car.colorId}}</td>
-        <td>{{car.modelYear}}</td>
-        <td>{{car.dailyPrice}}</td>
-        <td>{{car.description}}</td>
-    </tr>
+  <thead>
+    <div class="row">
+      <div class="col-md-1">
+        <th>Id</th>
+      </div>
+      <div class="col-md-2">
+        <th>Marka</th>
+      </div>
+      <div class="col-md-2">
+        <th>Renk</th>
+      </div>
+      <div class="col-md-2">
+        <th>Model Yılı</th>
+      </div>
+      <div class="col-md-2">
+        <th>Fiyat</th>
+      </div>
+      <div class="col-md-3">
+        <th>Açıklama</th>
+      </div>
+    </div>
+  </thead>
+</table>
+<table class="table">
+  <tr *ngFor="let car of cars">
+    <div class="row">
+      <div class="col-md-1">
+        <td>{{ car.carId }}</td>
+      </div>
+      <div class="col-md-2">
+        <td>{{ car.brandName }}</td>
+      </div>
+      <div class="col-md-2">
+        <td>{{ car.colorName }}</td>
+      </div>
+      <div class="col-md-2">
+        <td>{{ car.modelYear }}</td>
+      </div>
+      <div class="col-md-2">
+        <td>{{ car.dailyPrice }}</td>
+      </div>
+      <div class="col-md-3">
+        <td>{{ car.description }}</td>
+      </div>
+    </div>
+  </tr>
 </table>
