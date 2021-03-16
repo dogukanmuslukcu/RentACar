@@ -1,1 +1,6 @@
-<p>brand works!</p>
+<ul class="list-group" style="margin-top: 10%;margin-bottom: 10%;">   
+    <li class="list-group-item active"  aria-current="true" style="text-align: center;" >
+        Markalar</li>
+      <li  *ngFor="let brand of brands" class="list-group-item">
+          {{brand.brandName}}</li>
+    </ul>

@@ -1,8 +1,22 @@
-<div class="container">
+<div class="table">
   <app-navi></app-navi>
-    <div>
-      <app-car></app-car>
+    <div class="row">
+      <div class="col-md-3">
+        <app-color></app-color>
+      </div>
+      <div class="col-md-9">
+         <app-car-dto></app-car-dto>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <app-brand></app-brand>
     </div>
-    <app-color></app-color>
+    <div class="col-md-9">
+      <div class="col-md-9">
+        <app-rental-dto></app-rental-dto>
+      </div>
+      <app-customer></app-customer>
+   </div>
   <router-outlet></router-outlet>
 </div>

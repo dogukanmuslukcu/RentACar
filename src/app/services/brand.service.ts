@@ -10,7 +10,7 @@ export class BrandService {
 
   apiUrl = "https://localhost:44309/api/brands/getAll";
   constructor(private httpClient: HttpClient) { }
-  getCars():Observable<brandResponseModel> {
+  getBrands():Observable<brandResponseModel> {
     return this.httpClient.get<brandResponseModel>(this.apiUrl)
   }
 }

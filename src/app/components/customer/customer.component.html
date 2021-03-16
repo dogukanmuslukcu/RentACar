@@ -1,1 +1,20 @@
-<p>customer works!</p>
+<li class="list-group-item active" aria-current="true" style="text-align: center;" style="margin-top: 3%;">
+    Müşteriler</li>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Müşteri Id</th>
+            <th>İsim</th>
+            <th>Soyİsim</th>
+            <th>Şirket Adı</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let customer of customers">
+        <td>{{customer.customerId}}</td>
+        <td>{{customer.firstName}}</td>     
+        <td>{{customer.lastName}}</td>
+        <td>{{customer.companyName}}</td>      
+        <td>{{customer.email}}</td>   
+    </tr>
+</table>
