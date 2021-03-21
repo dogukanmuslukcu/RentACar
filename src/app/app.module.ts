@@ -15,6 +15,8 @@ import { RentalDtoComponent } from './components/rental-dto/rental-dto.component
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +28,8 @@ import { RentalDtoComponent } from './components/rental-dto/rental-dto.component
     RentalComponent,
     CarDtoComponent,
     RentalDtoComponent,
+    
+    
     
   ],
   imports: [
