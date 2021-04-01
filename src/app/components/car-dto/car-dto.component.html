@@ -9,15 +9,20 @@
             <th>Model Yılı</th>
             <th>Fiyat</th>
             <th>Car Name</th>
-            <th>Detaylar</th>
+            <th></th>
+            
         </tr>
     </thead>
-    <tr *ngFor="let carDto of carDtos">
-        <td>{{carDto.carId}}</td>
-        <td>{{carDto.brandName}}</td>
-        <td>{{carDto.colorName}}</td>
-        <td>{{carDto.modelYear}}</td>
-        <td>{{carDto.dailyPrice}}</td>
-        <td>{{carDto.description}}</td>     
-    </tr>
+    <tbody>
+        <tr *ngFor="let carDto of carDtos">
+            <td>{{carDto.carId}}</td>
+            <td>{{carDto.brandName}}</td>
+            <td>{{carDto.colorName}}</td>
+            <td>{{carDto.modelYear}}</td>
+            <td>{{carDto.dailyPrice}}</td>
+            <td>{{carDto.description}}</td>
+            <td><button routerLink="/carDtos/carImages/{{carDto.carId}}" (click)="getImagesById(carDto.carId)"
+                class="btn btn-primary" type="button">Detay</button></td>
+        </tr>
+    </tbody>
 </table>
